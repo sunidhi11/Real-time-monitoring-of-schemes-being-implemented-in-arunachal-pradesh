@@ -1,0 +1,117 @@
+<!DOCTYPE html>-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Select form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    
+	
+	body 
+  {
+  background: url("02.jpg") no-repeat center fixed; 
+  background-size: cover;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: black;   
+  }
+
+  .checkbox
+		{
+			 font-size: 15px !important;
+			padding: 5px 5px;
+			margin: 8px ;
+			box-sizing: border-box;
+			color: black;	
+			 line-height: 1.5 !important;
+      letter-spacing: 2px;
+     
+      font-family: "Times New Roman", Times, serif;
+	  
+		}
+	
+	
+	  	input[type=text] , [type=textarea]
+		{
+			width: 80%;
+			padding: 5px 5px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			background-color: white;
+			color: black;	
+		}
+		
+		
+  </style>
+  <body>
+    <div class="contaier">
+	
+
+	<marquee behavior="alternate"> <h1>CLICK ON THE FIELDS TO INCLUDE THEM IN THE DYNAMIC FORM</h1></marquee>
+
+	<center><div class="container" >
+	     <form action="createSchemeDbController" method="post">
+    <input type="text" name="schemeCode" placeholder='Enter Scheme Code to view the generated form:'>
+     <input type="submit" value="Get Form">
+    </form> 
+    
+	<form class="select-attribute" action="SetAttributes" method="post" >
+		
+		<div class="well well-lg">
+		
+
+		  <div class="row">
+          <div class="col-sm-4">
+
+		  <h3>General Information:</h3>
+            <label><input type="checkbox" value="yes" name="name">Name</label><br><br>
+			<label><input type="checkbox" value="yes" name="address">Address</label><br><br>
+            <label><input type="checkbox" value="yes" name="mobile">Contact</label><br><br>
+			<label><input type="checkbox" value="yes" name="email">Email</label><br><br>
+            <label><input type="checkbox" value="yes" name="dob">Date of birth</label><br><br>
+			  <label><input type="checkbox" value="yes" name="age">Age</label><br><br>
+          <label><input type="checkbox" value="yes" name="adhharNo">Aadhar No</label><br><br>
+			  <label><input type="checkbox" value="yes" name="gender">Gender</label><br><br>
+            <label><input type="checkbox" value="yes" name="cast">Cast</label><br><br>
+			  </div>
+			  <div class="col-sm-4">
+			  <br><br><br><br>
+			  
+			  <label><input type="checkbox" value="yes" name="husband">Husband/Father's Name</label><br><br>
+            <label><input type="checkbox" value="yes" name="panchayat">Village Panchayat</label><br><br>
+            <label><input type="checkbox" value="yes" name="district">District</label><br><br>
+            <label><input type="checkbox" value="yes" name="block">Block</label><br><br>
+			  <label><input type="checkbox" value="yes" name="hostel">Hostel Address</label><br><br>
+            <label><input type="checkbox" value="yes" name="school">School Name and Address</label><br><br>
+            <label><input type="checkbox" value="yes" name="hospital">Hospital Name and Address</label><br><br>
+			</div>
+			<div class="col-sm-4">
+
+
+			<h3>File Uploads</h3><br>
+		      <label><input type="checkbox" value="yes" name="file_aadhar">Aadhar Proof</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_cast">Cast Certificate</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_passbook">Passbook</label><br><br>
+              <label><input type="checkbox" value="yes" name="d_l">Driving Liecnce</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_bpl">BPL</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_residance">Residance Proof</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_10th">10th certificate</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_12th">12th certificate</label><br><br>
+              <label><input type="checkbox" value="yes" name="file_other">Any other files</label><br><br>
+          </div>
+		  </div>
+        </div>
+		</div>     
+</center> 
+ 
+	<input type="text"  name="schemeCode"  placeholder='Enter Scheme Code here:'>
+        <input type="submit" value="Set Form!">  
+		</form>
+   </div>
+  </body>
+</html>
